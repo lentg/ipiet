@@ -7,6 +7,8 @@ class ImageUploader < CarrierWave::Uploader::Base
   include Piet::CarrierWaveExtension
   include CarrierWave::MiniMagick
 
+  process :optimize
+
 
   # Include the Sprockets helpers for Rails 3.1+ asset pipeline compatibility:
   # include Sprockets::Helpers::RailsHelper
